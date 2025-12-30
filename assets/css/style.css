@@ -10,10 +10,60 @@
     color: var(--dark-brown);
   }
   
-  .hero {
+  .south {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  #loader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-inner {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--honey-gold);
+  }
+  
+  .navbar {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background: #fff !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 999;
   }
   
