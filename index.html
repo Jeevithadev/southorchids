@@ -15,22 +15,167 @@
 <body data-barba="wrapper">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo.png" height="40" alt="SouthOrchids">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="assets/images/logo.png" height="40" alt="SouthOrchids Honey">
       </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="process.html">Our Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning ms-lg-3" href="contact.html">
+              Order Now
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+  
 
   <!-- Page Content -->
   <main data-barba="container" data-barba-namespace="home">
-    <section class="hero">
-      <div class="container text-center">
-        <h1>Pure. Natural. SouthOrchids Honey.</h1>
-      </div>
-    </section>
+    <section class="hero d-flex align-items-center text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold">
+            Pure. Natural.<br>SouthOrchids Honey
+          </h1>
+          <p class="lead mt-3">
+            Harvested from pristine South Indian orchards.  
+            No additives. No processing. Just nature.
+          </p>
+      
+          <div class="mt-4">
+            <a href="products.html" class="btn btn-warning btn-lg me-3">
+              View Products
+            </a>
+      
+            <a href="https://wa.me/91XXXXXXXXXX"
+               target="_blank"
+               class="btn btn-outline-dark btn-lg">
+              Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>About SouthOrchids</h2>
+              <p>
+                SouthOrchids Honey is a premium honey brand committed to delivering
+                pure, raw, and naturally harvested honey directly from South Indian orchards.
+              </p>
+              <p>
+                Our honey is collected ethically, without harming bees,
+                and processed without heat or chemicals.
+              </p>
+              <a href="about.html" class="btn btn-outline-warning">
+                Learn More
+              </a>
+            </div>
+      
+            <div class="col-md-6 text-center">
+              <img src="assets/images/placeholder.jpg"
+                   class="img-fluid rounded"
+                   alt="About SouthOrchids">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container text-center">
+          <h2 class="mb-4">Our Honey Varieties</h2>
+      
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card product-card h-100">
+                <img src="assets/images/placeholder.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5>Wild Forest Honey</h5>
+                  <p>Rich, dark, mineral-rich honey from forest blossoms.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card product-card h-100">
+                <img src="assets/images/placeholder.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5>Multi-Floral Honey</h5>
+                  <p>Balanced sweetness from diverse orchard flowers.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card product-card h-100">
+                <img src="assets/images/placeholder.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5>Raw Organic Honey</h5>
+                  <p>Unprocessed, enzyme-rich, straight from the hive.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <a href="products.html" class="btn btn-warning mt-4">
+            View All Products
+          </a>
+        </div>
+      </section>
+      <section class="py-5 bg-dark text-light">
+        <div class="container text-center">
+          <h2>From Hive to Home</h2>
+          <p class="mt-3">
+            Our honey undergoes minimal handling to preserve
+            nutrients, aroma, and natural goodness.
+          </p>
+          <a href="process.html" class="btn btn-outline-light mt-3">
+            See Our Process
+          </a>
+        </div>
+      </section>
+      <section class="py-5 bg-warning text-dark">
+        <div class="container text-center">
+          <h2>Order Directly from Us</h2>
+          <p class="mt-2">
+            For bulk orders, retail supply, or direct purchase,
+            contact us on WhatsApp.
+          </p>
+      
+          <a href="https://wa.me/91XXXXXXXXXX"
+             target="_blank"
+             class="btn btn-dark btn-lg mt-3">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </section>           
+      
   </main>
+  <footer class="py-4 bg-dark text-light">
+    <div class="container text-center">
+      <p class="mb-1">
+        © 2025 SouthOrchids Honey. All Rights Reserved.
+      </p>
+      <p class="small">
+        📍 South India | 📞 +91 XXXXXXXXXX | ✉️ info@southorchids.com
+      </p>
+    </div>
+  </footer>
+  
 
   <!-- JS -->
   <script src="https://unpkg.com/@barba/core"></script>
