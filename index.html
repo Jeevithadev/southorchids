@@ -62,9 +62,10 @@
 
   <!-- Page Content -->
   <main data-barba="container" data-barba-namespace="home">
-    <section class="south d-flex align-items-center text-center">
+    <section class="three-container">
         <canvas id="honeyCanvas"></canvas>
-
+      </section>
+    <section class="south d-flex align-items-center text-center">
         <div class="container">
           <h1 class="display-4 fw-bold">
             Pure. Natural.<br>SouthOrchids Honey
@@ -87,6 +88,13 @@
           </div>
         </div>
       </section>
+      <div class="honey-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,60 C240,120 480,0 720,40 960,80 1200,40 1440,60 L1440,0 L0,0 Z"
+                fill="#FFF8E1"/>
+        </svg>
+      </div>
+      
       <!--About section -->
       <section class="py-5 bg-light">
         <div class="container">
@@ -107,7 +115,7 @@
             </div>
       
             <div class="col-md-6 text-center">
-              <img src="assets/images/placeholder.jpg"
+                <img src="assets/images/placeholder.jpg"
                    class="img-fluid rounded"
                    alt="About SouthOrchids">
             </div>
@@ -222,7 +230,9 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- Three.js -->
-<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<!-- <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script> -->
+<script type="module" src="assets/js/three-scene.js"></script>
+
 
 <script src="assets/js/transitions.js"></script>
 <script src="assets/js/animations.js"></script>
@@ -233,6 +243,13 @@
    target="_blank">
   💬
 </a>
+
+<div class="bee-layer">
+    <img src="assets/images/bee.svg" class="bee">
+    <img src="assets/images/bee.svg" class="bee">
+    <img src="assets/images/bee.svg" class="bee">
+    <img src="assets/images/bee.svg" class="bee">
+  </div>
 
 </body>
 </html>
