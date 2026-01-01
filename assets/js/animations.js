@@ -73,22 +73,28 @@ document.querySelectorAll(".story-section").forEach((section) => {
 });
 
 
-// bee animation
+/* ------------------------------
+   BEE FLOATING SYSTEM
+-------------------------------- */
+document.querySelectorAll(".bee").forEach((bee, i) => {
 
-document.querySelectorAll(".bee").forEach((bee) => {
     gsap.set(bee, {
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      scale: gsap.utils.random(0.6, 1)
+      x: gsap.utils.random(0, window.innerWidth),
+      y: gsap.utils.random(0, window.innerHeight),
+      scale: gsap.utils.random(0.7, 1),
+      rotation: gsap.utils.random(-20, 20)
     });
   
-    gsap.to(bee, {
-      x: "+=" + gsap.utils.random(-200, 200),
-      y: "+=" + gsap.utils.random(-150, 150),
-      duration: gsap.utils.random(15, 30),
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut"
-    });
+    function fly() {
+      gsap.to(bee, {
+        x: gsap.utils.random(-100, window.innerWidth + 100),
+        y: gsap.utils.random(-100, window.innerHeight + 100),
+        rotation: gsap.utils.random(-30, 30),
+        duration: gsap.utils.random(12, 20),
+        ease: "sine.inOut",
+        onComplete: fly
+      });
+    }
+  
+    fly();
   });
-  
