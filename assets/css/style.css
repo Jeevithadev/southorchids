@@ -77,8 +77,9 @@
   
   .product-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: visible;
   }
-  
   .product-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
@@ -99,17 +100,7 @@
     font-size: 30px;
     z-index: 999;
   }
-  
-  .honey-wave {
-    line-height: 0;
-    overflow: hidden;
-  }
-  
-  .honey-wave svg {
-    width: 100%;
-    height: 80px;
-    display: block;
-  }
+
   .bee {
     position: fixed;
     width: 32px;
@@ -119,12 +110,32 @@
     z-index: 99999; /* above canvas */
     opacity: 0.85; /* visible */
     will-change: transform;
-    outline: 1px solid red;
   }
   
-  .honey-wave svg {
-    width: 100%;
-    display: block;
-  }
-  
+  .honey-separator {
+  width: 100vw;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.honey-separator svg {
+  width: 100%;
+  height: 140px;
+  display: block;
+}
+.hive-bg {
+  position: absolute;
+  inset: 0;
+  background: url("../images/honeycomb.svg") repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+/* GPU acceleration */
+* {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+
   
